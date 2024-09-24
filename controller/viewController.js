@@ -53,7 +53,7 @@ function showImgs(index){
     let html = ``
     for(let i = 0; i < model.products[index].img.length; i++){
         html += `
-        <img class="pictures" src="/Img/${model.products[index].img[i]}"/>
+        <img class="pictures" url("${model.products[index].img[i]})"/>
         `
     }
     return html;
