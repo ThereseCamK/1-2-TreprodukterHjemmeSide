@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(63, 57, 57);
+    margin: 0;
+    padding: 0;
+    color: rgb(29, 77, 29);
+    background-image: url('Img/heart.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    overflow: scroll;
+}
+
+.Header{
+    background-image: url('logo_no_background.png');
+    height: 20vh;
+    margin-left: 2%;
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: left;
+    background-size: contain;
+
+
+}
+.Header-background{
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    width: 100%;
+    top: 0vh;
+}
+.buttons-bar{
+    position: absolute;
+    left: 60%;
+    top: 12vh; 
+}
+
+.footer{
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 85vh;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.content{
+    
+    top:0vh;
+    color: white;
+    padding-bottom: 20vh;
+    overflow: hidden;
+}
+
+.btn{
+    margin: 10px;
+    background-color: rgb(104, 65, 15);
+    width: 100px;
+    height: 50px;
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    background: linear-gradient(to right, rgb(181, 192, 27), rgb(11, 138, 60));
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+    border-radius: 10%;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutContent{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px rgb(5, 5, 5);
+    position: fixed;
+    margin: 5%;
+    color: white;
+
+    font-weight: bold;
+   
+}
+.productContent{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px rgb(5, 5, 5);
+    color: white;
+    margin: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.singleProduct{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px rgb(5, 5, 5);
+    color: white;
+    margin: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pictures{
+    height: 100px;
+    width: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .buttons-bar{
+        position: absolute;
+        left: 10%;
+        top: 10vh; 
+    }
+    .Header{
+        background-image: url('logo_no_background.png');
+        height: 10vh;
+        margin-left: 2%;
+
+    }
+    .Header-background{
+        height: 15vh;
+       
+    }
+    .btn{
+        margin: 10px;
+        width: 100px;
+        height: 25px;
+        font-size: medium;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .buttons-bar{
+        position: absolute;
+        left: 10%;
+        top: 10vh; 
+    }
+    .Header{
+        background-image: url('logo_no_background.png');
+        height: 10vh;
+        margin-left: 2%;
+
+    }
+    .Header-background{
+        height: 15vh;
+       
+    }
+    .btn{
+        margin: 5px;
+        width: 100px;
+        height: 25px;
+        font-size: medium;
+    }
+  }
