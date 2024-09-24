@@ -62,8 +62,8 @@ body{
     height: 50px;
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
     font-size: larger;
-    color: blue;
-    background-color: rgb(245, 213, 172, 0.5);
+    color: black;
+    background-color: rgba(74, 133, 189, 0.5);
 
     /* background: linear-gradient(to right, rgb(226, 241, 13), rgb(3, 117, 247));
                 -webkit-background-clip: text;
@@ -82,7 +82,7 @@ body{
 .aboutContent{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 20px rgb(5, 5, 5);
-    position: fixed;
+    
     margin: 5%;
     color: white;
 
@@ -109,7 +109,7 @@ body{
     height: 100px;
     width: 100px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .buttons-bar{
         position: absolute;
         left: 10%;
