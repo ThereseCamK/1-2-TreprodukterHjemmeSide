@@ -9,8 +9,182 @@
 </head>
 <body>
     <div id="app"></div>
-    <script src="model.js"></script>
-    <script src="/views/HomeView.js"></script>
-    <script src="/controller/viewController.js"></script>
+
+
+    <script>const model= {
+        currentPage: 'about',
+        contactInfo:{
+            phoneNumber: 45454646,
+            name: 'Remi Eger Stien',
+            adress:'toppen av veien 3 3456 Froland',
+            email: 'remi@gmail.com',
+            facebook: 'https://www.facebook.com/groups/448680922004040',
+        },
+        navbarButtons: ['Om', 'Produkter', 'Galleri'],
+        content: '',
+        products:[
+            {
+                id:1,
+                name: 'Hjerte smykke',
+                description: 'Laget av pæretre, 1cm * 1cm ',
+                price: 1000,
+                img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true'],
+            },
+            {
+                id:2,
+                name: 'Smykke',
+                description: 'Laget av marmor, 4cm * 2cm',
+                price: 1500,
+                img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/stone.jpg?raw=true'],
+            },
+            {
+                id:3,
+                name: 'Hjerte ring',
+                description: 'Laget av pæretre, omkrets: 3cm',
+                price: 900,
+                img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring.jpg?raw=true', 'https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring2.jpg?raw=true'],
+            },
+    
+            {
+                id:3,
+                name: 'Hjerte ring nr 2',
+                description: 'Laget av pæretre, omkrets: 3cm',
+                price: 900,
+                img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring.jpg?raw=true', 'https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring2.jpg?raw=true'],
+            },
+    
+        ],
+        galleri:[
+            {
+                name: 'Hjerte smykke',
+                description: 'Laget av pæretre, 1cm * 1cm',
+                img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true'],
+            },
+            {
+                name: 'Smykke',
+                description: 'Laget av marmor, 4cm * 2cm',
+                img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/stone.jpg?raw=true'],
+            },
+            {
+                name: 'Hjerte ring',
+                description: 'Laget av pæretre, omkrets: 3cm',
+                img:  ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring.jpg?raw=true', 'https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring2.jpg?raw=true'],
+            },
+    
+        ]
+    }
+    HomeView();
+
+
+function HomeView(){
+    let html = ''
+    html += `
+     <div class="Header-background">
+         <div class="Header">
+                <div class="buttons-bar">${getButtons()}</div>
+        </div>
+    </div>
+
+    <div class="content">
+        ${model.content}
+    </div>
+
+    <div class="footer">
+        ${footer()}</div>
+    </div>
+    `
+    document.getElementById('app').innerHTML = html;
+}
+
+function getButtons(){
+    let html = ''
+    for(let i = 0; i < model.navbarButtons.length; i++){
+        
+        html += `<button class="btn" onclick="${model.navbarButtons[i]}()">${model.navbarButtons[i]}</button>`
+    }
+    return html;
+}
+
+function footer(){
+    let html = `
+    <div>
+    KontaktInfo <br>
+
+    ${model.contactInfo.name}<br>
+    ${model.contactInfo.phoneNumber}<br>
+    ${model.contactInfo.adress}<br>
+    ${model.contactInfo.email}<br>
+    ${model.contactInfo.facebook}
+</div>
+    `
+    return html
+}
+
+
+
+function Om(){
+    model.content = `
+    <div class="aboutContent">
+        Jeg heter Remi og jeg er veldig glad i å lage forskjellige ting.
+        Det er en stor lidenskap jeg har. 
+        Ta kontakt dersom du ønsker noe av det jeg har laget eller om det er noe du lurer på om jeg kan lage til deg.
+    </div>
+    `
+    HomeView();
+}
+
+function Produkter(){
+let html = `
+    <div>`
+    
+    for(let i = 0; i < model.products.length; i++){
+       html += `<div class="singleProduct">
+                <p> ${model.products[i].name}</p>
+                ${showImgs(i)}
+                <p>Pris: ${model.products[i].price}</p>
+                <p>Beskrivelse: ${model.products[i].description}</p>
+                </div>`
+    }
+    `
+       
+    </div>
+    `
+    model.content = html;
+    HomeView();
+
+ 
+}
+
+function Galleri(){
+    let html = `
+    <div class="galleri">
+    
+    `
+  for(let i = 0; i < model.galleri.length; i++){
+       html += `<div class="singleProduct">
+                <p> ${model.galleri[i].name}</p>
+                ${showImgs(i)}
+              
+                <p>Beskrivelse: ${model.galleri[i].description}</p>
+                </div>`
+    }`
+    </div>
+    `
+    model.content = html;
+    HomeView();
+}
+function showImgs(index){
+    let html = ``
+    for(let i = 0; i < model.products[index].img.length; i++){
+        html += `
+        <img class="pictures" src="${model.products[index].img[i]}"/>
+        `
+    }
+    return html;
+}
+    </script>
+    <!-- <script src="model.js"></script>
+    <!-- <script src="/views/HomeView.js"></script> -->
+    <script src="/controller/viewController.js"></script> -->
 </body>
 </html>
