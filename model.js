@@ -1,5 +1,5 @@
 const model= {
-    currentPage: 'about',
+    currentPage: 'Om',
     contactInfo:{
         phoneNumber: 45454646,
         name: 'Remi Eger Stien',

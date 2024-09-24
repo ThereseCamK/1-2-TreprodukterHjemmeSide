@@ -8,12 +8,15 @@ body{
     background-size: cover;
     background-attachment: fixed; 
     background-size: 100% 100%;
-    overflow: scroll;
+    
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .Header{
     background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/logo-removebg-preview.png?raw=true');
-    height: 20vh;
+    height: 15vh;
     margin-left: 2%;
     background-repeat: no-repeat;
     background-size: fill;
@@ -22,37 +25,71 @@ body{
 
 
 }
+
 .Header-background{
-    height: 25vh;
+    height: 15vh;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0vh;
 }
 .buttons-bar{
     position: absolute;
     left: 60%;
-    top: 12vh; 
+    top: 5vh; 
 }
 
 .footer{
     padding: 10px;
     position: fixed;
     width: 100%;
-    top: 85vh;
-    height: 15vh;
+    top: 80vh;
+    height: 20vh;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     color: white;
+
+    
+}
+.linkToSome{
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    margin-bottom: 5%;
+    font-size: 25px;
+
+}
+.fa{
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    margin-bottom: 5%;
+   
+    color: rgb(3, 3, 3);
+}
+.developerName{
+    position: absolute;
+    bottom: 10%;
+    font-size: small;
+    margin-bottom: 2%;
+    color: black;
 }
 .content{
-    
-    top:0vh;
+    top:20vh;
+    margin-top: 20vh;
+    align-items: center;
     color: white;
-    padding-bottom: 20vh;
-    overflow: hidden;
+    padding-bottom: 30vh;
+    padding: 2%;
+    position: unset;
+    min-height: 1500px;
+ 
+}
+
+content::-webkit-scrollbar {
+    display: none;
 }
 
 .btn{
@@ -82,38 +119,56 @@ body{
 .aboutContent{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 20px rgb(5, 5, 5);
-    
-    margin: 5%;
     color: white;
-
     font-weight: bold;
-   
-}
-.productContent{
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 10px 10px 20px rgb(5, 5, 5);
-    color: white;
     margin: 5%;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1%;
+    height: 200px;
+    width: 80%;
+
 }
+
+.productContent::-webkit-scrollbar {
+    display: none;
+}
+
+
 .singleProduct{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 10px 10px 20px rgb(5, 5, 5);
     color: white;
     margin: 5%;
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    max-width: 20vw;
+    max-height: 40vh;
 }
+
 .pictures{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+.first {
+    clear: left;
+  
+}
+.images{
+    overflow: scroll;
+}
+.images::-webkit-scrollbar {
+    display: none;
 }
 @media only screen and (max-width: 900px) {
     .buttons-bar{
         position: absolute;
         left: 10%;
         top: 10vh; 
+    }
+    .content{
+        min-height: 2000px;
     }
     .Header{
    
@@ -131,6 +186,25 @@ body{
         height: 25px;
         font-size: medium;
     }
+    .singleProduct{
+        
+        margin: 5%;
+        padding: 10px;
+        border-radius: 10px;
+        float: none;
+        width: 500px;
+    
+        min-width: 80vw;
+    }
+
+        .pictures{
+            height: 90px;
+            width: 90px;
+        }
+        .first {
+        clear: none;
+
+        }
   }
   @media only screen and (max-width: 400px) {
     .buttons-bar{
@@ -154,11 +228,7 @@ body{
         height: 25px;
         font-size: medium;
     }
-  }
-  @media only screen and (max-height: 900px) {
-    .footer{
+    
      
-        position: relative;
-       
-    }
+   
   }
