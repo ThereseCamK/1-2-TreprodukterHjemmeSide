@@ -15,21 +15,21 @@ const model= {
             name: 'Hjerte smykke',
             description: 'Laget av pæretre, 1cm * 1cm ',
             price: 1000,
-            img: ['heart.jpg'],
+            img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true'],
         },
         {
             id:2,
             name: 'Smykke',
             description: 'Laget av marmor, 4cm * 2cm',
             price: 1500,
-            img: ['stone.jpg'],
+            img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/stone.jpg?raw=true'],
         },
         {
             id:3,
             name: 'Hjerte ring',
             description: 'Laget av pæretre, omkrets: 3cm',
             price: 900,
-            img: ['ring.jpg', 'ring2.jpg'],
+            img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring.jpg?raw=true', 'https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring2.jpg?raw=true'],
         },
 
         {
@@ -37,7 +37,7 @@ const model= {
             name: 'Hjerte ring nr 2',
             description: 'Laget av pæretre, omkrets: 3cm',
             price: 900,
-            img: ['ring.jpg', 'ring2.jpg'],
+            img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring.jpg?raw=true', 'https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring2.jpg?raw=true'],
         },
 
     ],
@@ -45,17 +45,17 @@ const model= {
         {
             name: 'Hjerte smykke',
             description: 'Laget av pæretre, 1cm * 1cm',
-            img: ['heart.jpg'],
+            img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true'],
         },
         {
             name: 'Smykke',
             description: 'Laget av marmor, 4cm * 2cm',
-            img: ['stone.jpg'],
+            img: ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/stone.jpg?raw=true'],
         },
         {
             name: 'Hjerte ring',
             description: 'Laget av pæretre, omkrets: 3cm',
-            img:  ['ring.jpg', 'ring2.jpg'],
+            img:  ['https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring.jpg?raw=true', 'https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/ring2.jpg?raw=true'],
         },
 
     ]

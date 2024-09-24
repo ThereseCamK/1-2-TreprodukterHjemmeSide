@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     color: rgb(29, 77, 29);
-    background-image: url('Img/heart.jpg');
+    background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
@@ -12,7 +12,7 @@ body{
 }
 
 .Header{
-    background-image: url('logo_no_background.png');
+    background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/logo_no_background.png?raw=true');
     height: 20vh;
     margin-left: 2%;
     background-repeat: no-repeat;
