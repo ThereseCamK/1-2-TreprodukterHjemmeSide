@@ -12,7 +12,7 @@ body{
 }
 
 .Header{
-    background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/logo_no_background.png?raw=true');
+    background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/logo-removebg-preview.png?raw=true');
     height: 20vh;
     margin-left: 2%;
     background-repeat: no-repeat;
@@ -62,11 +62,13 @@ body{
     height: 50px;
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
     font-size: larger;
-    text-shadow: 1px 1px 1px white;
-    background: linear-gradient(to right, rgb(226, 241, 13), rgb(11, 138, 60));
+    color: blue;
+    background-color: rgb(245, 213, 172, 0.5);
+
+    /* background: linear-gradient(to right, rgb(226, 241, 13), rgb(3, 117, 247));
                 -webkit-background-clip: text;
                 background-clip: text;
-                color: transparent;
+                color: transparent; */
     border-radius: 10%;
 }
 
