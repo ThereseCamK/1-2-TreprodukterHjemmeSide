@@ -2,12 +2,12 @@ body{
     background-color: rgb(63, 57, 57);
     margin: 0;
     padding: 0;
-    color: rgb(29, 77, 29);
-    background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true');
+ 
+    /* background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/heart.jpg?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
+    background-attachment: fixed;  */
+
     
 }
 body::-webkit-scrollbar {
@@ -15,8 +15,8 @@ body::-webkit-scrollbar {
 }
 
 .Header{
-    background-image: url('https://github.com/ThereseCamK/1-2-TreprodukterHjemmeSide/blob/main/Img/logo-removebg-preview.png?raw=true');
-    height: 15vh;
+    background-image: url('/Img/12.png');
+    height: 35vh;
     margin-left: 2%;
     background-repeat: no-repeat;
     background-size: fill;
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 .Header-background{
-    height: 15vh;
+    height: 35vh;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
@@ -67,14 +67,14 @@ body::-webkit-scrollbar {
     right: 15%;
     margin-bottom: 5%;
    
-    color: rgb(3, 3, 3);
+    color: rgb(207, 190, 190);
 }
 .developerName{
     position: absolute;
     bottom: 10%;
     font-size: small;
     margin-bottom: 2%;
-    color: black;
+    color: grey;
 }
 .content{
     top:20vh;
@@ -143,14 +143,40 @@ content::-webkit-scrollbar {
     text-align: center;
     vertical-align: middle;
     float: left;
-    max-width: 20vw;
-    max-height: 40vh;
+    max-width: 80vw;
+    max-height: 70vh;
+    min-width: 50vw;
+    min-height: 30vh;
+   
 }
 
 .pictures{
     height: 150px;
     width: 150px;
+
 }
+.galleri{
+    float: left;
+}
+.biggPicture{
+    transform: scale(5.0);
+    transition: transform 0.25s ease;
+}
+.bckBtn{
+
+    font-style: italic;
+    display:inline;
+   
+    border-top-left-radius: 10px;
+
+}
+.moreBtn{
+   
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+  
+}
+
 .first {
     clear: left;
   
