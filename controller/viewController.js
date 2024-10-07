@@ -2,9 +2,9 @@ function Om(){
     
     model.content = `
     <div class="aboutContent">
-        Jeg heter Remi og jeg er veldig glad i å lage forskjellige ting.
-        Det er en stor lidenskap jeg har. 
-        Ta kontakt dersom du ønsker noe av det jeg har laget eller om det er noe du lurer på om jeg kan lage til deg.
+        Jeg heter Remi og jeg er veldig glad i å lage forskjellige ting av gjenbukt treverk.
+        Det er en veldig stor lidenskap jeg har. 
+        Ta kontakt på mail dersom du ønsker noe av det jeg har laget eller om det er noe du lurer på om jeg kan lage til deg.
     </div>
     `
     HomeView();
