@@ -25,7 +25,7 @@ function HomeView(){
         </div>
 
         <div  class="footer">
-            ${footer()}</div>
+            ${footer()}
         </div>
     </div>
     `
@@ -43,18 +43,18 @@ function getButtons(){
 
 function footer(){
     let html = `
-    <div>
+   
     KontaktInfo: 
    <div> ${model.contactInfo.name}  <br>Tlf: ${model.contactInfo.phoneNumber}
     epost:  ${model.contactInfo.email}</div>
  
    <div>Adresse: ${model.contactInfo.adress}</div>
+    <div class="linkToSome"><a href="https://www.facebook.com/groups/448680922004040" class="fa fa-facebook"></a></div>
     <div class="developerName">Siden er utviklet av Therese Camilla Nordnes</div>
-   <div class="linkToSome"><a href="https://www.facebook.com/groups/448680922004040" class="fa fa-facebook"></a></div>
+  
       
 
 
-</div>
     `
     return html
 }
