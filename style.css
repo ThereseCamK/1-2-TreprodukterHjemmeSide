@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
     height: 20vh;
     /* background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px); */
-    color: rgb(120, 118, 118);
+    color: rgb(245, 238, 238);
     left:70%;
     
 }
@@ -73,6 +73,7 @@ body::-webkit-scrollbar {
 .developerName{
     position: absolute;
     bottom: 10%;
+    left: -50%;
     font-size: small;
     margin-bottom: 2%;
     color: grey;
