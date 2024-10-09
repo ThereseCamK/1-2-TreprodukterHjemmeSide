@@ -205,11 +205,7 @@ content::-webkit-scrollbar {
       outline: 5px dashed #dfd9d9;
     }
   } */
-  @media (prefers-color-scheme: dark) {
-    body {
-        color:#ab05a0;
-        background:#333333
-    }
+
 @media only screen and (max-width: 900px) {
     .buttons-bar{
         position: static;
@@ -320,3 +316,35 @@ content::-webkit-scrollbar {
      
    
   }
+
+  @media (prefers-color-scheme: dark) {
+    .singleProduct{
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 10px 10px 20px rgb(5, 5, 5);
+        color: white;
+        
+        background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent
+       
+    }
+    .aboutContent{
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 10px 20px rgb(5, 5, 5);
+        background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+       
+    
+    }
+    .btn{
+       
+    
+        background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
