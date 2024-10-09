@@ -194,6 +194,17 @@ content::-webkit-scrollbar {
 .images::-webkit-scrollbar {
     display: none;
 }
+/* .theme-a {
+    background: #dca;
+    color: #731;
+  } */
+  @media (prefers-color-scheme: dark) {
+    .singleProduct {
+      background: rgb(48, 11, 231);
+      color: rgb(228, 10, 163);
+      outline: 5px dashed #dfd9d9;
+    }
+  }
 @media only screen and (max-width: 900px) {
     .buttons-bar{
         position: static;
@@ -276,6 +287,8 @@ content::-webkit-scrollbar {
         
         }
   }
+
+  
   @media only screen and (max-width: 400px) {
     .buttons-bar{
        
