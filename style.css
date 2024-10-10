@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(63, 57, 57);
+    background-color: rgb(43, 39, 39);
     margin: 0;
     padding: 0;
   
@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
     height: 20vh;
     /* background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px); */
-    color: rgb(245, 238, 238);
+    color: rgb(129, 77, 4);
     left:70%;
     
 }
@@ -65,15 +65,15 @@ body::-webkit-scrollbar {
    
     
     margin-bottom: 5%;
-    background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+    background: linear-gradient(to right, rgb(90, 61, 5), rgb(125, 82, 2));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent
 }
 .developerName{
     position: absolute;
-    bottom: 10%;
-    left: -50%;
+    bottom: 1%;
+
     font-size: small;
     margin-bottom: 2%;
     color: grey;
@@ -103,7 +103,7 @@ content::-webkit-scrollbar {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-size: larger;
     border-radius: 10%;
-    background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+    background: linear-gradient(to right, rgb(242, 164, 91), rgb(122, 72, 2));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -119,11 +119,13 @@ content::-webkit-scrollbar {
 .aboutContent{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 20px rgb(5, 5, 5);
-    background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+    background: linear-gradient(to right, rgb(242, 164, 91), rgb(122, 72, 2));
     -webkit-background-clip: text;
+    text-shadow: rgb(39, 37, 37) 5px 5px 5px;
     background-clip: text;
     color: transparent;
-    font-weight: bold;
+    font-size: x-large;
+    font-weight: bolder;
     margin: 5%;
     padding: 1%;
     height: 200px;
@@ -151,7 +153,7 @@ content::-webkit-scrollbar {
     max-height: 70vh;
     min-width: 50vw;
     min-height: 30vh;
-    background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+    background: linear-gradient(to right, rgb(242, 164, 91), rgb(122, 72, 2));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent
@@ -260,7 +262,7 @@ content::-webkit-scrollbar {
            
         }
         .fa{
-            margin-bottom: 0%;
+            margin-bottom: 5%;
         }
   
         .footer{
@@ -272,10 +274,12 @@ content::-webkit-scrollbar {
             
             /* background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px); */
-            color: rgb(120, 118, 118);
+            color: rgb(129, 77, 4);
         }
         .developerName{
             position: relative;
+            left:0px;
+            bottom: 20%;
         
         }
         .aboutContent{
@@ -320,11 +324,11 @@ content::-webkit-scrollbar {
 
   @media (prefers-color-scheme: dark) {
     .singleProduct{
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(235, 6, 6, 0.2);
         box-shadow: 10px 10px 20px rgb(5, 5, 5);
-        color: white;
+        color: rgb(180, 66, 66);
         
-        background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+        background: linear-gradient(to right, rgb(4, 72, 120), rgb(247, 162, 4));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent
@@ -333,7 +337,7 @@ content::-webkit-scrollbar {
     .aboutContent{
         background-color: rgba(0, 0, 0, 0.5);
         box-shadow: 10px 10px 20px rgb(5, 5, 5);
-        background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+        background: linear-gradient(to right, rgb(7, 116, 174), rgb(247, 162, 4));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -343,7 +347,7 @@ content::-webkit-scrollbar {
     .btn{
        
     
-        background: linear-gradient(to right, rgb(247, 244, 238), rgb(247, 162, 4));
+        background: linear-gradient(to right, rgb(75, 2, 36), rgb(247, 162, 4));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
