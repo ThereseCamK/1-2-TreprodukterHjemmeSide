@@ -324,11 +324,11 @@ content::-webkit-scrollbar {
 
   @media (prefers-color-scheme: dark) {
     .singleProduct{
-        background-color: rgba(235, 6, 6, 0.2);
+        background-color: rgba(5, 0, 0, 0.2);
         box-shadow: 10px 10px 20px rgb(5, 5, 5);
-        color: rgb(180, 66, 66);
+     
         
-        background: linear-gradient(to right, rgb(4, 72, 120), rgb(247, 162, 4));
+        background: linear-gradient(to right, rgb(244, 82, 1), rgb(247, 162, 4));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent
@@ -337,7 +337,7 @@ content::-webkit-scrollbar {
     .aboutContent{
         background-color: rgba(0, 0, 0, 0.5);
         box-shadow: 10px 10px 20px rgb(5, 5, 5);
-        background: linear-gradient(to right, rgb(7, 116, 174), rgb(247, 162, 4));
+        background: linear-gradient(to right, rgb(244, 82, 1), rgb(247, 162, 4));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -347,7 +347,7 @@ content::-webkit-scrollbar {
     .btn{
        
     
-        background: linear-gradient(to right, rgb(75, 2, 36), rgb(247, 162, 4));
+        background: linear-gradient(to right, rgb(244, 82, 1)), rgb(247, 162, 4);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
